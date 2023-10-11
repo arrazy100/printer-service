@@ -15,7 +15,11 @@ const options = { encoding: "GB18030" /* default */ };
 const printer = new escpos.Printer(device, options);
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 app.post("/print", (req, res) => {
   const { message } = req.body;
