@@ -211,6 +211,11 @@ escape-html@~1.0.3:
   resolved "https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz"
   integrity sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==
 
+escpos-network@^3.0.0-alpha.5:
+  version "3.0.0-alpha.5"
+  resolved "https://registry.npmjs.org/escpos-network/-/escpos-network-3.0.0-alpha.5.tgz"
+  integrity sha512-H/K0nOBqXJ7yKmhN6OJIJgEgnnRGY2/18YWlJOmwEljoaO5LJ2fc0ofM7n/zn6ijNrXBAiQWwr5OHGYccJ/VPg==
+
 escpos-usb@^3.0.0-alpha.4:
   version "3.0.0-alpha.4"
   resolved "https://registry.npmjs.org/escpos-usb/-/escpos-usb-3.0.0-alpha.4.tgz"

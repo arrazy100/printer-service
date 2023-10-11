@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    image: node:14  # Use an official Node.js image
+    build:
+      context: ./  # Set the build context to the current directory
+      dockerfile: Dockerfile  # Specify your Dockerfile if not named 'Dockerfile'
+    working_dir: /app  # Set the working directory inside the container
+    volumes:
+      - ./:/app  # Mount your Node.js application code
+    ports:
+      - "8080:8080"  # Map port 8080 on the host to port 8080 in the container
+    environment:
+      NODE_ENV: production  # Set the Node.js environment
+    command: npm start  # Replace with your start command
