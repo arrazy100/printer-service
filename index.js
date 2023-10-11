@@ -14,12 +14,13 @@ const device = new escpos.USB();
 const options = { encoding: "GB18030" /* default */ };
 const printer = new escpos.Printer(device, options);
 
+const corsOptions = {
+  origin: "http://localhost:3000", // Allow requests from this origin
+  methods: "POST", // Allow only POST requests
+};
+
 app.use(express.json());
-app.use(
-  cors({
-    origin: "*",
-  })
-);
+app.use(cors(corsOptions));
 
 app.post("/print", (req, res) => {
   const { message } = req.body;
